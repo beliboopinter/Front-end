@@ -1,0 +1,195 @@
+/* ==========================================================================
+   1. Configurações Gerais e Fundo Claro Lavanda Pastel
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #3b2d54; /* Tom de roxo padronizado */
+    line-height: 1.8;
+    
+    /* Fundo lavanda pastel claro de segurança */
+    background-color: #6e5e89; 
+    
+    /* Camada branca translúcida mantida - Imagem removida do final */
+    background-image: linear-gradient(oklch(81.569% 0.0417 301.122 / 0.92), rgba(175, 161, 196, 0.94));
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Centralização do conteúdo */
+header, section, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 24px;
+}
+
+/* Links em tom Roxo */
+a {
+    color: #3b2d54; 
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #513e73;
+}
+
+/* ==========================================================================
+   2. Cabeçalho (Header) e Menu de Navegação
+   ========================================================================== */
+header {
+    text-align: center;
+    border-bottom: 1px solid rgba(109, 82, 153, 0.15);
+    padding-top: 70px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #3b2d54; 
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #3b2d54; 
+    margin-bottom: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #3b2d54; 
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #513e73;
+    border-bottom: 2px solid #3b2d54;
+}
+
+/* ==========================================================================
+   3. Seções Principais e Caixas Padronizadas
+   ========================================================================== */
+section {
+    border-bottom: 1px solid rgba(109, 82, 153, 0.1);
+}
+
+section h2 {
+    font-size: 1.6rem;
+    color: #3b2d54; 
+    margin-bottom: 22px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Detalhe em linha roxa abaixo dos títulos */
+section h2::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #3b2d54; 
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* Caixa Sobre Mim: Mesma cor roxa do tema principal */
+#sobre p {
+    color: #ffffff; /* Letras brancas para contraste perfeito no bloco escuro */
+    font-size: 1.05rem;
+    text-align: justify;
+    background: #3b2d54; /* Cor do bloco idêntica ao tema */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(59, 45, 84, 0.15); 
+}
+
+#contato p {
+    color: #3b2d54; 
+    font-size: 1.05rem;
+}
+
+/* ==========================================================================
+   4. Cartão de Projetos (Mesma cor roxa do tema principal)
+   ========================================================================== */
+.projeto-card {
+    background: #3b2d54; /* Cor do bloco idêntica ao tema */
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(59, 45, 84, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-3px);
+}
+
+.projeto-card h3 {
+    font-size: 1.3rem;
+    color: #ffffff; /* Letras brancas para leitura perfeita dentro do bloco escuro */
+    margin-bottom: 10px;
+}
+
+.projeto-card p {
+    color: #e2daf0; /* Lilás bem claro para descrição do projeto */
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+/* Botão "Ver Projeto" - Fundo claro para destacar dentro do bloco escuro */
+.projeto-card a {
+    display: inline-block;
+    background-color: #f3effa; /* Fundo lavanda claro contrastante */
+    color: #3b2d54; /* Texto em roxo escuro padronizado */
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.projeto-card a:hover {
+    background-color: #ffffff;
+}
+
+/* ==========================================================================
+   5. Rodapé (Footer)
+   ========================================================================== */
+footer {
+    text-align: center;
+    color: #3b2d54; 
+    font-size: 0.85rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Mantém o seu nome, cargo e menu centralizados e alinhados com o resto do site */
+header h1, header p, nav {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+}
